@@ -12,3 +12,7 @@ contacto del usuario (que esten en el mismo formulario donde cambia su informaci
 publicacion:
 validar la subida de imagenes
 validar los campos de texto
+
+agregar un fecha nac en el register
+implementar boostrap
+colocar en la stylesheet las etiquetas del login y register
