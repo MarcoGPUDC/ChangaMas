@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Publicacion</title>
+    <link href="boostrap/css/bootstrap.css" rel="stylesheet" />
+
+
+
+    <style>
+        .vertical.carousel .carousel-item {
+            overflow: hidden;
+        }
+
+        .vertical.carousel .carousel-item-next:not(.carousel-item-start),
+        .vertical.carousel .active.carousel-item-end {
+            transform: translateY(100%);
+        }
+
+        .vertical.carousel .carousel-item-prev:not(.carousel-item-end),
+        .vertical.carousel .active.carousel-item-start {
+            transform: translateY(-100%);
+        }
+
+        .vertical.carousel .carousel-indicators {
+            top: 0;
+            left: unset;
+
+            margin-left: unset !important;
+            margin-right: 1rem;
+
+            flex-direction: row;
+        }
+
+        .vertical.carousel .carousel-indicators [data-bs-target] {
+            height: 30px;
+            width: 3px;
+        }
+
+        .vertical.carousel .carousel-control-prev,
+        .vertical.carousel .carousel-control-next {
+            width: 100%;
+            height: 60px;
+        }
+
+        .vertical.carousel .carousel-control-prev-icon,
+        .vertical.carousel .carousel-control-next-icon {
+            transform: rotateZ(90deg);
+        }
+
+        .vertical.carousel .carousel-control-next {
+            top: unset;
+            bottom: 0;
+        }
+
+        .carousel-inner .carousel-item .row {
+            display: block;
+            max-width: 100;
+            max-height: 100;
+        }
+
+        .carousel-inner .carousel-item>div:first-child {
+            display: block;
+        }
+
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: block;
+            max-width: 100;
+        }
+
+
+
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(25%);
+        }
+
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-25%);
+        }
+
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            background-color: rgba(9, 255, 0, 0.346);
+        }
+
+        div a img {
+            width: 20px;
+            height: 20px;
+        }
+        .rectangle{
+            width: 100%;
+            height: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <header>
+        <div class="logo">
+            <img src="img/changuito.png" alt="logo">
+            <h1>ChangaMás!</h1>
+        </div>
+        <div class="search-bar">
+            <img src="img/search.png" width="15" height="15">
+            <input type="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </div>
+        <div class="user-actions">
+            <form action="login.html">
+                <input type="submit" value="Iniciar sesión">
+            </form>
+            <form action="registrarse.html">
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </header>
+    <div class="container" style="height: 800px">
+        <div class="d-flex justify-content-center">
+            <div class="row" style="width: 600px">
+                <fieldset class="border border-3 border-success">
+                    <legend>Perfil</legend>
+                    <div class="row">
+                        <div class="col-sm-3"><img src="img/user.jpg" alt="user" width="75" height="75"></div>
+                        <div class="col-sm-6">
+                            <p>Nombre de Usuario</p>
+                            <p>Ubicacion</p>
+                            <p>Contacto</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href=""><img src="img/upvote.png" alt="Like"></a>
+                            <a href=""><img src="img/downvote.png" alt="Dislike"></a>
+                            <a href=""><img src="img/redflag.png" alt="Reporte"></a>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row mh-100">
+            <div class="col-sm-3">
+                <div class="container text-center my-3">
+                    <div id="recipeCarousel" class="carousel slide vertical" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/changuito.png" class="img-fluid" onclick="myFunction(this);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/campanita.png" class="img-fluid" onclick="myFunction(this);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/fondo.jpg" class="img-fluid" onclick="myFunction(this);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/patio.jpg" class="img-fluid" onclick="myFunction(this);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/edit.png" class="img-fluid" onclick="myFunction(this);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block col-sm-6 border border-2 mh-100">
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn float-end">&times;</span>
+
+                    <!-- Expanded image -->
+                    <img id="expandedImg" style="width:100%">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rectangle">Descripcion de trabajo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi vero libero facere quae cum nulla autem repellendus placeat laborum doloribus? Quidem assumenda provident explicabo? Iusto asperiores non quisquam assumenda aperiam.</div>
+                <div>
+                    <p class="w-30  h-30">Contactame!</p>
+                    <form>
+                        <input type="text" width="100" height="100">
+                        <button class="btn btn-success  " type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 3
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+
+
+    <footer class="container">
+        <div>
+            <h4>CONTACTANOS</h4>
+            <div>
+                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com/" target="_blank"><img src="img/instagram.jpeg" alt="Instagram"></a>
+                <a href="https://whatsapp.com/" target="_blank"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div>
+            <p>APARTADO LEGAL Y REGULATORIO</p>
+        </div>
+        <div>
+            <p>DEFENSA AL CONSUMIDOR</p>
+        </div>
+        <div>
+            <p>CHANGAMAS!</p>
+        </div>
+        <div>
+            <p>&reg; &copy; TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </footer>
+</body>
+
+</html>

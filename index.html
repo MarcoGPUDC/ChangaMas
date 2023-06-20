@@ -1,50 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <link rel="stylesheet" href="stylesheet.css" />
     <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <section class="container">
-        <article class="post">
-            <h1>Categoria</h1>
-            <img src="/img/user.jpg" id="mini-user-logo">
-            <h2>Titulo</h2>
-            <div class="carrusel-post">
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Cabecera-->
+    <header>
+        <div class="logo">
+            <img src="img/changuito.png" alt="logo">
+            <h1>ChangaMás!</h1>
+        </div>
+        <div class="search-bar">
+            <img src="img/search.png" width="15" height="15">
+            <input type="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </div>
+        <div class="user-actions">
+            <form action="login.html">
+                <input type="submit" value="Iniciar sesión">
+            </form>
+            <form action="registrarse.html">
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </header>
+    <!--Navegador para filtar entre empleadores o empleados-->
+    <nav class="nav justify-content-center">
+        <input type="checkbox" class="btn-check" id="btnnavcheck1" autocomplete="on">
+        <label class="btn btn-outline-success" for="btnnavcheck1">Empleadores</label>
+        <input type="checkbox" class="btn-check" id="btnnavcheck2" autocomplete="off">
+        <label class="btn btn-outline-success" for="btnnavcheck2">Empleados</label>
+    </nav>
+    <!--Contenedor del contenido principal de la pagina, esta dividido en dos secciones separadas en filas-->
+    <div class="container" style="float: left">
+        <!--Fila que contiene 2 columnas donde se disponen la barra de filtros y las publicaciones -->
+        <div class="row">
+            <!--grupo de botones de tipo checkbox dispuestos verticalmente-->
+            <div class="col-sm-2">
+                <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Categoria 1</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Categoria 2</label>
+                    <!--boton desplegable-->
+                    <div>
+                        <input type="checkbox" class="btn-check" data-bs-toggle="collapse" data-bs-target="#cat3"
+                            id="btncheck3">
+                        <label class="btn btn-outline-primary" for="btncheck3">Categoria 3
+                            &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <div class="collapse" id="cat3">
+                            <input type="checkbox" class="btn-check" id="btncheck3-1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck3-1">Subcategoria 1</label>
+                        </div>
+                    </div>
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck4">Categoria 4</label>
+                    <div>
+                        <input type="checkbox" class="btn-check" data-bs-toggle="collapse" data-bs-target="#cat5"
+                            id="btncheck5">
+                        <label class="btn btn-outline-primary" for="btncheck5">Categoria 5
+                            &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <div class="collapse" id="cat5">
+                            <input type="checkbox" class="btn-check" id="btncheck5-1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck5-1">Subcategoria 1</label>
+                        </div>
+                    </div>
+                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck6">Categoria 6</label>
+                </div>
             </div>
-            <h2>Descripcion</h2>
-            <p>descripcion del trabajo</p>
-        </article>
-        <article class="post">
-            <h1>Categoria</h1>
-            <img src="/img/user.jpg" id="mini-user-logo">
-            <h2>Titulo</h2>
-            <div class="carrusel-post">
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
+            <!--tarjetas de publicaciones se diponen nuevamente en filas y columnas-->
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/patio.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2>Descripcion</h2>
-            <p>descripcion del trabajo</p>
-        </article>
-        <article class="post">
-            <h1>Categoria</h1>
-            <img src="/img/user.jpg" id="mini-user-logo">
-            <h2>Titulo</h2>
-            <div class="carrusel-post">
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
-                <a href="Login.html"><img src="img/patio.jpg" id="mini-job-image" /></a>
+        </div>
+    </div>
+    <!--Pie de pagina-->
+    <footer class="container">
+        <div>
+            <h4>CONTACTANOS</h4>
+            <div>
+                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.jpeg" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com/" target="_blank"><img src="img/instagram.jpeg" alt="Instagram"></a>
+                <a href="https://whatsapp.com/" target="_blank"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
             </div>
-            <h2>Descripcion</h2>
-            <p>descripcion del trabajo</p>
-        </article>
-    </section>
+        </div>
+        <div>
+            <p>APARTADO LEGAL Y REGULATORIO</p>
+        </div>
+        <div>
+            <p>DEFENSA AL CONSUMIDOR</p>
+        </div>
+        <div>
+            <p>CHANGAMAS!</p>
+        </div>
+        <div>
+            <p>&reg; &copy; TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </footer>
 </body>
 
 </html>
