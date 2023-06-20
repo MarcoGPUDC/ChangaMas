@@ -1,0 +1,38 @@
+.post {
+    margin: 10px;
+    border: solid 1px black;
+    width: 250px;
+    height: 380px;
+}
+
+.post * {
+    margin: 3%;
+}
+
+.post p {
+    border: solid 1px rgba(33, 31, 31, 0.646);
+    border-style: dotted;
+}
+
+#mini-user-logo {
+    width: 15px;
+    height: 15px;
+}
+
+#md-mini-user-logo {
+    width: 40px;
+    height: 40px;
+}
+
+#mini-job-image {
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0;
+}
+
+.carrusel-post img {
+    width: 40;
+    height: 40;
+}
+
+;

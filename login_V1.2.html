@@ -3,6 +3,7 @@
     <head>
        <title>Registrarse</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="register.js"></script>
        <style>
            header {
                display: flex;
@@ -62,6 +63,8 @@
                 text-align: center;
                 margin-bottom: 20px;
             }
+            input[type="file"],
+            input[type="email"],
             input[type="text"],
             input[type="password"] {
                 display: block;
@@ -128,21 +131,21 @@
         <div class="registration-form">
             <fieldset>
                 <legend><h2 class="h3 mb-3 fw-normal">Registrarse</h2></legend>
-                <form action="home_extranet.html" method="get">
+                <form action="home_extranet.html" method="get" id="login">
                     <div>
                         <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
+                        <input type="text" id="username" name="username" placeholder="Apellido" required>
                     </div>
                     <div>
-                        <input type="text" placeholder="Correo electrónico">
+                        <input type="email" placeholder="Correo electrónico" id="email" name="email" required>
                     </div>
                     <div>
-                        <input type="password" placeholder="Contraseña">
-                        <input type="password" placeholder="Repetir contraseña">
+                        <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                        <input type="password" placeholder="Repetir contraseña" id="rpassword" name="rpassword" required>
                     </div>
-                    <div>
-                        <input type="submit" value="Subir">
-                        <input type="text" placeholder="File.jpg">
+                    <div class="">
+                        <input type="file" placeholder="Subir frente del DNI"><br>
+                        <input type="file" placeholder="Subir dorso del DNI">
                     </div>
                     <div>
                         <input type="submit" value="Registrarse">
