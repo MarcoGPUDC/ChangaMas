@@ -3,106 +3,8 @@
     <head>
        <title>Registrarse</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <style>
-           header {
-               display: flex;
-               align-items: center;
-               justify-content: space-between;
-               padding: 10px;
-               background-color: rgba(255, 255, 255, 0.5);
-           }
-           header input[type="search"] {
-                width: 300px; 
-                padding: 10px;
-                font-size: 16px;
-            }
-           .logo {
-               display: flex;
-               align-items: center;
-           }
-           .logo img {
-               width: 80px;
-               height: 80px;
-               margin-right: 10px;
-           }
-           .search-bar {
-               display: flex;
-               align-items: center;
-               
-           }
-           .search-bar input[type="search"] {
-               margin-left: 5px;
-           }
-           .user-actions {
-               display: flex;
-               align-items: center;
-           }
-           .user-actions form {
-               margin-left: 10px;
-           }
-           
-           .registration-form {
-                background-image: url('img/fondo.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-           
-           .registration-form {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-            fieldset {
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-            legend {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            input[type="text"],
-            input[type="password"] {
-                display: block;
-                width: 100%;
-                margin-bottom: 10px;
-                padding: 8px;
-                font-size: 16px;
-            }
-            input[type="submit"] {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #4caf50;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-                font-size: 16px;
-            }
-            input[type="submit"]:hover {
-                background-color: #45a049;
-            }
-           
-           footer {
-                background-color: rgba(255, 255, 255, 0.5);
-                padding: 20px;
-                text-align: center;
-            }
-            footer div {
-                margin-bottom: 10px;
-            }
-            footer p {
-                margin: 0;
-                font-size: 9px;
-            }
-            footer a {
-                margin-right: 5px;
-            }
-            footer img {
-                width: 20px;
-                height: 20px;
-            }
-       </style>
+       <link rel="stylesheet" href="styles-login-register.css" type="text/css">
+       
     </head>
     <body>
         <header>
@@ -138,10 +40,10 @@
                     </div>
                     <div>
                         <input type="password" placeholder="Contraseña">
-                        <input type="password" placeholder="Repetir contraseña">
+                        <input style="margin-top: 15px" type="password" placeholder="Repetir contraseña">
                     </div>
                     <div>
-                        <input type="submit" value="Subir">
+                        <input style="margin-top: 15px" type="submit" value="Subir">
                         <input type="text" placeholder="File.jpg">
                     </div>
                     <div>
