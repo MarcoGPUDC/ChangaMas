@@ -1,160 +1,26 @@
 <!DOCTYPE html5>
 <html>
     <head>
-        <TITLE>Iniciar Sesion</TITLE>
-      <style>
-          header {
-               display: flex;
-               align-items: center;
-               justify-content: space-between;
-               padding: 10px;
-               background-color: rgba(255, 255, 255, 0.5);
-           }
-           header input[type="search"] {
-                width: 300px; 
-                padding: 10px;
-                font-size: 16px;
-            }
-           .logo {
-               display: flex;
-               align-items: center;
-           }
-           .logo img {
-               width: 80px;
-               height: 80px;
-               margin-right: 10px;
-           }
-           .search-bar {
-               display: flex;
-               align-items: center;
-               
-           }
-           .search-bar input[type="search"] {
-               margin-left: 5px;
-           }
-           .user-actions {
-               display: flex;
-               align-items: center;
-           }
-           .user-actions form {
-               margin-left: 10px;
-           }
-          .registration-form {
-                background-image: url('img/fondo.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-           
-           .login-form {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 50vh;
-            }
-            fieldset {
-                border: none;
-                padding: 0;
-                margin: 0;
-                
-            }
-          fieldset div label{
-              display: block;
-          }
-            legend {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-           
-            input[type="submit"] {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #4caf50;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-                font-size: 16px;
-            }
-            input[type="submit"]:hover {
-                background-color: #45a049;
-            }
-          
-
-            .form-floating {
-                margin-bottom: 25px;
-            }
-
-            input[type="email"],
-            input[type="password"] {
-                display: inline-block;
-                width: 100%;
-                margin-bottom: -10px;
-                padding: 8px;
-                font-size: 16px;
-            }
-            input[type="text"]{
-                display: block;
-                width: 100%;
-                margin-bottom: 10px;
-                padding: 8px;
-                font-size: 16px;
-            }
-            h6 {
-                margin: 10px;
-            }
-            /* Estilos para los enlaces de recuperación de contraseña */
-            h6 a {
-                color: blue;
-                text-decoration: underline;
-                
-            }
-
-            /* Estilos para el botón de inicio de sesión */
-            button[type="submit"] {
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-        
-           
-           footer {
-                background-color: rgba(255, 255, 255, 0.5);
-                padding: 20px;
-                text-align: center;
-            }
-            footer div {
-                margin-bottom: 10px;
-            }
-            footer p {
-                margin: 0;
-                font-size: 9px;
-            }
-            footer a {
-                margin-right: 5px;
-            }
-            footer img {
-                width: 20px;
-                height: 20px;
-            }
-        
-        
-        
-      </style>  
-        
-            
+        <title>Iniciar Sesión</title>
+        <link rel="stylesheet" href="styles-login-register.css" type="text/css">
     </head>
+    
     <body>
-       <header>
+        <header>
+            <!-- Logotipo -->
             <div class="logo">
                 <img src="img/changuito.png" alt="logo">
                 <h1>ChangaMás!</h1>
             </div>
+            
+            <!-- Barra de búsqueda -->
             <div class="search-bar">
                 <img src="img/search.png" width="15" height="15">
                 <input type="search" placeholder="Buscar...">
                 <input type="submit" value="Buscar">
             </div>
+            
+            <!-- Acciones de usuario -->
             <div class="user-actions">
                 <form action="login.html">
                     <input type="submit" value="Iniciar sesión">
@@ -164,44 +30,57 @@
                 </form>
             </div>
         </header>
-       <div>
-    <div class="login-form">
-        <fieldset>
-            <legend><h2 class="h3 mb-3 fw-normal">Iniciar Sesion</h2></legend>
-                <div>
-                    <input type="text" placeholder="Correo electrónico">
-                </div>
-                <div>
-                    <input type="password" placeholder="Contraseña">
-                </div>
-            <div style="margin-top: 0px">
-                <h6>¿Olvidaste tu contraseña? <a href="#">Recuperar contraseña.</a></h6>
-            </div>
-             <div>
-                <div class="checkbox mb-3">
-                    <h5>
-                        <div>
-                            <label>
-                                <input type="checkbox" value="remember-me"> Recuerdame
-                            </label>
+        
+        <div>
+            <!-- Formulario de inicio de sesión -->
+            <div class="login-form">
+                <fieldset>
+                    <legend><h2 class="h3 mb-3 fw-normal">Iniciar Sesión</h2></legend>
+                    
+                    <!-- Campo de entrada para el correo electrónico -->
+                    <div>
+                        <!-- Input para ingresar el correo electrónico -->
+                        <input type="text" placeholder="Correo electrónico">
+                    </div>
+                    
+                    <!-- Campo de entrada para la contraseña -->
+                    <div>
+                        <!-- Input para ingresar la contraseña -->
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    
+                    <!-- Enlace de recuperación de contraseña -->
+                    <div style="margin-top: 0px">
+                        <h6>¿Olvidaste tu contraseña? <a href="#">Recuperar contraseña.</a></h6>
+                    </div>
+                    
+                    <!-- Checkbox y botón de inicio de sesión -->
+                    <div>
+                        <div class="checkbox mb-3">
+                            <h5>
+                                <div>
+                                    <!-- Checkbox para recordar el inicio de sesión -->
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Recuérdame
+                                    </label>
+                                </div>
+                                <div style="float: right; margin-top: -30px ">
+                                    <form action="home_extranet.html" method="get">
+                                        <!-- Botón para iniciar sesión -->
+                                        <button type="submit">Iniciar Sesión</button>
+                                    </form>
+                                </div>
+                            </h5>
                         </div>
-                        <div style="float: right; margin-top: -30px ">
-                            <form action="home_extranet.html" method="get">
-                                <button type="submit">Iniciar Sesion</button>
-                            </form>
-                        </div>
-                    </h5>
-                </div>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-    </div>
-   
-   
-</div>
-    </body>
-    <footer>
+        </div>
+        
+        <footer>
+            <!-- Contacto -->
             <div>
-                <h4>CONTACTANOS</h4>
+                <h4>CONTÁCTANOS</h4>
                 <div>
                     <a href="https://facebook.com/" target="_blank"><img src="img/facebook.jpeg" alt="Facebook"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
@@ -209,17 +88,26 @@
                     <a href="https://whatsapp.com/" target="_blank"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
                 </div>
             </div>
+            
+            <!-- Apartado legal y regulatorio -->
             <div>
                 <p>APARTADO LEGAL Y REGULATORIO</p>
             </div>
+            
+            <!-- Defensa al consumidor -->
             <div>
                 <p>DEFENSA AL CONSUMIDOR</p>
             </div>
+            
+            <!-- ChangaMás -->
             <div>
                 <p>CHANGAMAS!</p>
             </div>
+            
+            <!-- Derechos reservados -->
             <div>
                 <p>&reg; &copy; TODOS LOS DERECHOS RESERVADOS</p>
             </div>
         </footer>
+    </body>
 </html>
