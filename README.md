@@ -37,6 +37,7 @@ publicacion:
 validar la subida de imagenes
 validar los campos de texto
 
+/*YA ESTA TODO LO DE ABAJO ECHO*/
 agregar un fecha nac en el register
 implementar boostrap
 colocar en la stylesheet las etiquetas del login y register
