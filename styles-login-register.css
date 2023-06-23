@@ -72,7 +72,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 75%;
     background-image: url('img/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
