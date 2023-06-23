@@ -1,9 +1,4 @@
 /* Estilos para el encabezado */
-body{
-    background-image: url('img/fondo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 header {
     display: flex;
     align-items: center;
@@ -53,6 +48,24 @@ header input[type="search"] {
 .user-actions form {
     margin-left: 10px;
 }
+
+/* Estilos para el cuerpo de la pagina*/
+body{
+    background-image: url('img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    /* Reglas de estilo específicas para pantallas más pequeñas */
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1200px) {
+    /* Reglas de estilo específicas para pantallas más grandes */
+}
+
 
 /* Estilos para el formulario de registro */
 .registration-form {
